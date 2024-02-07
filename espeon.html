@@ -9,7 +9,37 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      #espeonHero {
+        background-image: url(resources/espeon2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90vh;
+      }
+
+      #espeonHeroText {
+        height: 90vh;
+        width: 45%;
+      }
+
+      #bottomEspeonHero {
+        background-image: url(resources/all_in_one.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90vh;
+      }
+
+      #bottomEspeonHeroText {
+        height: 90vh;
+      }
+    </style>
     <title>Eeveelution</title>
   </head>
   <body>
@@ -93,6 +123,118 @@
         </div>
       </div>
     </nav>
+
+    <!-- Hero -->
+    <section class="text-light" id="espeonHero">
+      <div
+        class="d-flex flex-column justify-content-center px-4 py-5"
+        id="espeonHeroText"
+      >
+        <h1 class="animate__animated animate__fadeInDown display-3 fw-bold">
+          Espeon
+        </h1>
+        <h2 class="animate__animated animate__fadeInLeft display-6 fw-bold">
+          The Illuminating Empath
+        </h2>
+        <p class="lead mb-4">
+          With intuitive grace and a compassionate spirit, Espeon shines as a
+          beacon of wisdom and empathy, guiding others with its insightful
+          presence.
+        </p>
+      </div>
+    </section>
+
+    <!-- Table Section -->
+
+    <section class="px-4 my-5 pt-1 pb-3">
+      <h2 class="display-6 fw-bold mb-5 text-center">
+        Espeon's Personality Traits
+      </h2>
+      <div class="d-flex justify-content-center">
+        <div class="d-flex flex-column align-items-stretch flex-grow-3">
+          <table
+            class="table table-striped table-bordered table-hover table-dark h-100 text-center"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Characteristic</th>
+                <th scope="col">Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Intuition</th>
+                <td>90%</td>
+              </tr>
+              <tr>
+                <th scope="row">Empathy</th>
+                <td>95%</td>
+              </tr>
+              <tr>
+                <th scope="row">Wisdom</th>
+                <td>85%</td>
+              </tr>
+              <tr>
+                <th scope="row">Insightfulness</th>
+                <td>90%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <img
+          class="flex-grow-2 d-none d-sm-block"
+          src="resources/espeongif.gif"
+          alt="Eevee evolving into espeon."
+        />
+      </div>
+    </section>
+
+    <!-- Bottom Hero Section -->
+
+    <section class="" id="bottomEspeonHero">
+      <div
+        class="d-flex justify-content-center px-4 py-5"
+        id="bottomEspeonHeroText"
+      >
+        <h2 class="display-6 fw-bold">Find Your Eevee Essence!</h2>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="px-4 pb-3 bg-body-tertiary">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <p class="col-md-4 mb-0 text-body-secondary">2024 Eeveelution, Inc</p>
+
+          <a
+            href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <img src="resources/eevee_logo.png" alt="Logo" width="80" />
+          </a>
+
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-2 text-body-secondary"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="umbreon.html" class="nav-link px-2 text-body-secondary"
+                >Umbreon</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="espeon.html" class="nav-link px-2 text-body-secondary"
+                >Espeon</a
+              >
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
