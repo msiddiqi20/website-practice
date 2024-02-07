@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Eeveelution</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="resources/eevee_logo.png"
+            alt="Logo"
+            width="35"
+            class="d-inline-block align-text-top"
+          />
+          Eeveelution</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="umbreon.html">Umbreon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="espeon.html">Espeon</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Evolutions
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="index.html">Eevee</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Espeon</a>
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Flareon</a>
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Glaceon</a>
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Jolteon</a>
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Leafeon</a>
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Sylveon</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Umbreon</a>
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Vaporeon</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="px-4 py-5 my-5 text-center">
+      <div class="container" style="display: flex" id="hero">
+        <div class="col-lg-6 mx-auto">
+          <h1
+            class="animate__animated animate__fadeInDown display-3 fw-bold text-body-emphasis"
+          >
+            Eeveelutions!
+          </h1>
+          <p class="lead mb-4">
+            The potential for growth and change. Whether you're feeling fiery
+            like Flareon or serene like Vaporeon, our community embraces every
+            evolution. Join us to explore your potential and embark on an
+            adventure of self-discovery!
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button
+              type="button"
+              class="btn btn-primary btn-lg px-4 gap-3"
+              data-bs-toggle="modal"
+              data-bs-target="#signUpModal"
+            >
+              Sign-up!
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg px-4"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+        <img
+          class="animate__animated animate__fadeInUp img-flex mx-auto mb-4 d-none d-sm-block"
+          src="resources/eevee-lotion.svg"
+          alt=""
+          width="50%"
+        />
+      </div>
+    </section>
+
+    <!-- Sign Up Modal Form -->
+
+    <div
+      class="modal fade"
+      id="signUpModal"
+      tabindex="-1"
+      aria-labelledby="signUpModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title w-100" id="signUpModalLabel">Sign up</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="signUpFirstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="signUpFirstName"
+                placeholder="First Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="signUpLastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="signUpLasttName"
+                placeholder="Last Name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="signUpEmailAddress" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="signUpEmailAddress"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="signUpPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="signUpPassword"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal Form -->
+
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title w-100" id="loginModalLabel">Login</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="loginEmailAddress" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="loginEmailAddress"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="loginPassword"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <section class="px-4 my-5 pt-1 pb-3 bg-dark">
+      <h2
+        class="animate__animated animate__fadeInLeft display-6 fw-bold text-light py-3 text-center"
+      >
+        Discover Your Eevee Personality!
+      </h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="resources/eeveebase.avif"
+              class="card-img-top"
+              alt="Eevee"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Eevee</h5>
+              <p class="card-text">
+                Playful and adaptable, Eevee is the epitome of versatility. It
+                possesses a curious nature, always eager to explore and learn.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="resources/espeon.webp"
+              class="card-img-top"
+              alt="Espeon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Espeon</h5>
+              <p class="card-text">
+                Intuitive and wise, Espeon possesses a keen intellect and deep
+                insight. It's attuned to the emotions of others, offering
+                guidance and support with its psychic abilities.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="resources/flareon.webp"
+              class="card-img-top"
+              alt="Flareon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Flareon</h5>
+              <p class="card-text">
+                Passionate and fiery, Flareon exudes warmth and energy. It's
+                fiercely loyal to its trainer and never backs down from a
+                challenge.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="resources/glaceon.webp"
+              class="card-img-top"
+              alt="Glaceon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Glaceon</h5>
+              <p class="card-text">
+                Cool and composed, Glaceon exudes an air of elegance and
+                sophistication. It commands the power of ice with grace and
+                precision, bringing a sense of clarity and purity to its
+                surroundings.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="resources/jolteon.webp"
+              class="card-img-top"
+              alt="Jolteon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jolteon</h5>
+              <p class="card-text">
+                Electric and dynamic, Jolteon pulses with energy and excitement.
+                Its quick reflexes and sharp mind make it an agile and spirited
+                companion, always ready to spark adventure.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="resources/leafeon.webp"
+              class="card-img-top"
+              alt="Leafeon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Leafeon</h5>
+              <p class="card-text">
+                Nurturing and resilient, Leafeon is deeply connected to nature,
+                embodying the vitality of the earth. It brings a sense of
+                rejuvenation and growth wherever it goes, nurturing life and
+                fostering harmony.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="resources/sylveon.webp"
+              class="card-img-top"
+              alt="Sylveon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sylveon</h5>
+              <p class="card-text">
+                Affectionate and empathetic, Sylveon radiates love and
+                compassion. It's attuned to the emotions of those around it,
+                offering comfort and support with its nurturing presence.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="resources/umbreon.webp"
+              class="card-img-top"
+              alt="Umbreon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Umbreon</h5>
+              <p class="card-text">
+                Mysterious and loyal, Umbreon thrives in the shadows, ever
+                watchful and protective of its trainer. Its stoic demeanor hides
+                a fierce determination and unwavering commitment.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="resources/vaporeon.avif"
+              class="card-img-top"
+              alt="Vaporeon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Vaporeon</h5>
+              <p class="card-text">
+                Calm and serene, Vaporeon embodies tranquility and grace. It
+                navigates through life's ups and downs with a sense of fluidity,
+                bringing a sense of peace to those around it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gif Showcase -->
+    <section class="px-4 my-5 pt-1 pb-3" id="gif_showcase">
+      <h2 class="display-6 fw-bold">Witness the Evolution.</h2>
+      <div class="gif_container">
+        <img
+          src="resources/Eevee.gif"
+          alt="Eevee trasnforming into all forms."
+        />
+      </div>
+    </section>
+
+    <!-- The How Showcase -->
+    <section class="px-4 pt-1 pb-5 bg-dark text-light">
+      <h2 class="display-6 fw-bold py-3 text-center">Unveiling the Science</h2>
+      <div
+        class="container d-flex justify-content-center align-items-center lh-lg"
+      >
+        <img
+          class="p-5 d-none d-sm-block"
+          src="resources/evolutionstones.png"
+          alt="pokemon
+          types"
+          width="50%"
+        />
+        <p class="p-5 fs-5 text-center text-sm-start">
+          Eevee's adaptability through genetics and experiences mirrors the
+          development of human personalities. Like Eevee evolving in response to
+          its surroundings, our traits are shaped by upbringing, relationships,
+          and life events. This parallel emphasizes the significance of
+          embracing environments and change in both Pokémon and human
+          experiences, highlighting the journey of growth and adaptation we all
+          undergo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="px-4 pt-1 pb-3" id="embraceChange">
+      <h2 class="display-6 fw-bold py-3 text-center">Embrace the Change!</h2>
+      <div class="container d-flex justify-content-around align-items-center">
+        <img
+          class="d-none d-sm-block"
+          src="resources/eeveelution.gif"
+          alt="Eevee is trying to embrace the change!"
+          width="50%"
+        />
+        <div class="col-md-5 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"
+                >Email address</label
+              >
+              <input
+                id="newsletter1"
+                type="text"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="px-4 pb-3 bg-body-tertiary">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <p class="col-md-4 mb-0 text-body-secondary">2024 Eeveelution, Inc</p>
+
+          <a
+            href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <img src="resources/eevee_logo.png" alt="Logo" width="80" />
+          </a>
+
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-2 text-body-secondary"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="umbreon.html" class="nav-link px-2 text-body-secondary"
+                >Umbreon</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="espeon.html" class="nav-link px-2 text-body-secondary"
+                >Espeon</a
+              >
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

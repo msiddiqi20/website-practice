@@ -1,0 +1,26 @@
+#hero {
+  justify-content: center;
+  align-items: center;
+}
+
+#gif_showcase > h2 {
+  text-align: center;
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_title {
+  font-weight: bold;
+}
+
+.card {
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
